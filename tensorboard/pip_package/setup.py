@@ -44,7 +44,7 @@ setup(
     author="Google Inc.",
     author_email="packages@tensorflow.org",
     # Contained modules and scripts.
-    packages=find_packages(),
+    packages=find_packages(include=["tensorboard*", "patches*", "third_party*"]),
     entry_points={
         "console_scripts": CONSOLE_SCRIPTS,
         "tensorboard_plugins": [
